@@ -9,8 +9,6 @@ import {
   ITEM_PAGE_UNLOADED,
 } from "../../constants/actionTypes";
 
-const PLACEHOLDER = '/placeholder.png';
-
 const mapStateToProps = (state) => ({
   ...state.item,
   currentUser: state.common.currentUser,
@@ -52,7 +50,7 @@ class Item extends React.Component {
           <div className="row bg-white p-4">
             <div className="col-6">
               <img
-                src={this.props.item.image || PLACEHOLDER}
+                src={this.props.item.image || '/placeholder.png'}
                 alt={this.props.item.title}
                 className="item-img"
                 style={{ height: "500px", width: "100%", borderRadius: "6px" }}

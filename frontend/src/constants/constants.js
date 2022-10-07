@@ -1,1 +1,1 @@
-export const IMAGE_PLACEHOLDER = '/placeholder.png';
+export const IMAGE_PLACEHOLDER = "/placeholder.png";
